@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<attributes:AttributesStore 
+    xmi:version="2.0" 
+    xmlns:xmi="http://www.omg.org/XMI" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:demopsd="http://www.demo.org/DEMO/2.0"
+    xmlns:attributes="http://www.scopio.org/attributes/1.0">
+    
+    <attributes
+      xsi:type="attributes:SystemAttribute"
+      label="Initiating actor" 
+      description="Initiating actor"
+      id="initiator" 
+      section="Basic attributes" 
+      featureName="initiator"      
+      type="DemoCombo">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="Executing actor" 
+      description="Executing actor"
+      id="executor" 
+      section="Basic attributes" 
+      featureName="executor"      
+      type="DemoCombo">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="Transaction result" 
+      description="Transaction result"
+      id="transactionResult" 
+      section="Basic attributes" 
+      featureName="result"      
+      type="SimpleText">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="Transaction name" 
+      description="Transaction name"
+      id="transactionName" 
+      section="Basic attributes" 
+      featureName="name"      
+      type="SimpleText">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="Actor name" 
+      description="Actor name"
+      id="actorName" 
+      section="Basic attributes" 
+      featureName="name"
+      type="SimpleText">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="Start" 
+      description="Start"
+      id="Start" 
+      section="Basic attributes" 
+      featureName="name"
+      type="SimpleText">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="StartingProcessStep" 
+      description="StartingProcessStep"
+      id="startingName" 
+      section="Basic attributes" 
+      featureName="name"
+      type="SimpleText">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="EndingProcessStep" 
+      description="EndingProcessStep"
+      id="endingName" 
+      section="Basic attributes" 
+      featureName="name"
+      type="SimpleText">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="ExecuteTransaction" 
+      description="ExecuteTransaction"
+      id="ExecuteTransaction" 
+      section="Basic attributes"      
+      type="SimpleText">
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="Initiating name" 
+      description="Set initiating name"
+      id="inName" 
+      section="Basic attributes" 
+      featureName="inName"
+      type="Choice">
+      
+      <parameters xsi:type="attributes:ChoiceParameters">
+        <items>none</items>       
+        <items>request</items>
+        <items>quit</items>
+        <items>accept</items>
+        <items>reject</items>
+        <items>promise</items>
+        <items>decline</items>
+        <items>execute</items>
+        <items>state</items>
+        <items>stop</items>
+        
+        <values xsi:type="demopsd:LinkNames">none</values>
+        <values xsi:type="demopsd:LinkNames">rq</values>
+        <values xsi:type="demopsd:LinkNames">qt</values>
+        <values xsi:type="demopsd:LinkNames">ac</values>
+        <values xsi:type="demopsd:LinkNames">rj</values>
+        <values xsi:type="demopsd:LinkNames">pm</values>
+        <values xsi:type="demopsd:LinkNames">dc</values>
+        <values xsi:type="demopsd:LinkNames">ex</values>
+        <values xsi:type="demopsd:LinkNames">st</values>
+        <values xsi:type="demopsd:LinkNames">sp</values>
+      </parameters>
+  	</attributes>
+  	
+  	<attributes
+      xsi:type="attributes:SystemAttribute"
+      label="Executing name" 
+      description="Set executing name"
+      id="exName" 
+      section="Basic attributes" 
+      featureName="exName"
+      type="Choice">
+      
+      <parameters xsi:type="attributes:ChoiceParameters">   
+        <items>none</items>      
+        <items>request</items>
+        <items>quit</items>
+        <items>accept</items>
+        <items>reject</items>
+        <items>promise</items>
+        <items>decline</items>
+        <items>execute</items>
+        <items>state</items>
+        <items>stop</items>
+        
+        <values xsi:type="demopsd:LinkNames">none</values>    
+        <values xsi:type="demopsd:LinkNames">rq</values>
+        <values xsi:type="demopsd:LinkNames">qt</values>
+        <values xsi:type="demopsd:LinkNames">ac</values>
+        <values xsi:type="demopsd:LinkNames">rj</values>
+        <values xsi:type="demopsd:LinkNames">pm</values>
+        <values xsi:type="demopsd:LinkNames">dc</values>
+        <values xsi:type="demopsd:LinkNames">ex</values>
+        <values xsi:type="demopsd:LinkNames">st</values>
+        <values xsi:type="demopsd:LinkNames">sp</values>
+      </parameters>
+  	</attributes>
+  	
+</attributes:AttributesStore>

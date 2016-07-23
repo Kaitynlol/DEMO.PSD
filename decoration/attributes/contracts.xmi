@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decoration:ContractsPool xmi:version="2.0" 
+                          xmlns:xmi="http://www.omg.org/XMI" 
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                          xmlns:decoration="http://www.scopio.org/decoration/1.0.0" 
+                          xmlns:attributes="http://www.scopio.org/attributes/1.0">
+  
+  <contracts 
+      xsi:type="attributes:ElementCategory"
+      name="TR"
+      system="true">     
+    
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#transactionName"/>
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#transactionResult"/>
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#initiator"/>
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#executor"/>
+  </contracts>
+  
+  <contracts 
+      xsi:type="attributes:ElementCategory"
+      name="ActorBoundary"
+      system="true">     
+    
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#actorName"/>
+  </contracts>
+  
+  <contracts 
+      xsi:type="attributes:ElementCategory"
+      name="Start"
+      system="true"> 
+    
+   </contracts>
+   
+ <contracts 
+      xsi:type="attributes:ElementCategory"
+      name="StartingProcessStep"
+      system="true">     
+    
+  <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#startingName"/>      
+  </contracts>
+  
+  <contracts 
+      xsi:type="attributes:ElementCategory"
+      name="EndingProcessStep"
+      system="true">     
+    
+  <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#endingName"/>      
+  </contracts>
+  
+   <contracts 
+      xsi:type="attributes:ElementCategory"
+      name="ExecuteTransaction"
+      system="true"> 
+    
+   </contracts>
+   
+   <contracts 
+      xsi:type="attributes:ElementCategory"
+      name="ResponceLink"
+      system="true">
+      
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#inName"/>
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#exName"/>
+  </contracts>
+  
+  <contracts 
+      xsi:type="attributes:ElementCategory"
+      name="WaitingLink"
+      system="true">
+      
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#inName"/>
+    <attributes 
+      xsi:type="attributes:SystemAttribute"
+      href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/attributes.xmi#exName"/>
+  </contracts>
+  
+</decoration:ContractsPool>

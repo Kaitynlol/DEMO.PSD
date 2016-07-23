@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decoration:ContractsMapping 
+    xmi:version="2.0" 
+    xmlns:xmi="http://www.omg.org/XMI" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:decoration="http://www.scopio.org/decoration/1.0.0" 
+    xmlns:attributes="http://www.scopio.org/attributes/1.0">
+    
+    
+  <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Representant"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Diagram"/>
+    <key href="http://www.demo.org/DEMO/2.0#//DemoPSDDiagram"/>
+  </contractsMap>
+  
+  <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Representant"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Component"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/contracts.xmi#TR"/>
+    <key href="http://www.demo.org/DEMO/2.0#//TR"/>
+  </contractsMap>
+  
+  <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Representant"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Component"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/contracts.xmi#ActorBoundary"/>
+    <key href="http://www.demo.org/DEMO/2.0#//ActorBoundary"/>
+  </contractsMap>
+  
+  <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Representant"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Component"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/contracts.xmi#Start"/>
+    <key href="http://www.demo.org/DEMO/2.0#//Start"/>
+  </contractsMap>
+  
+  <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Representant"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Component"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/contracts.xmi#StartingProcessStep"/>
+    <key href="http://www.demo.org/DEMO/2.0#//StartingProcessStep"/>
+  </contractsMap>
+  
+  <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Representant"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Component"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/contracts.xmi#EndingProcessStep"/>
+    <key href="http://www.demo.org/DEMO/2.0#//EndingProcessStep"/>
+  </contractsMap>
+  
+   <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Representant"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Component"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/contracts.xmi#ExecuteTransaction"/>
+    <key href="http://www.demo.org/DEMO/2.0#//ExecuteTransaction"/>
+  </contractsMap>
+  
+  <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Edge"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/contracts.xmi#ResponceLink"/>
+    <key href="http://www.demo.org/DEMO/2.0#//ResponceLink"/>
+  </contractsMap>
+  
+   <contractsMap>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.project/decoration/attributes/contracts.xmi#Edge"/>
+    <value xsi:type="attributes:ElementCategory" href="platform:/plugin/org.scopio.demo.psd/decoration/attributes/contracts.xmi#WaitingLink"/>
+    <key href="http://www.demo.org/DEMO/2.0#//WaitingLink"/>
+  </contractsMap>
+  
+    
+</decoration:ContractsMapping>
