@@ -1,0 +1,83 @@
+@Ecore(nsURI="http://www.demo.org/DEMO/2.0")
+@GenModel(modelName="DemoPSD", 
+    prefix="DemoPSD",
+    editPlugin="/org.scopio.demo.psd",
+    editDirectory="/org.scopio.demo.psd/src-edit",
+    creationCommands="false", 
+	creationIcons="false",
+	operationReflection="false")
+package org.scopio.demo.psd
+
+import org.scopio.diagrams.Component
+import org.scopio.diagrams.Diagram
+import org.scopio.diagrams.Edge
+import org.scopio.entities.Representant
+
+@GenModel(image="false")
+class DemoPSDDiagram extends Diagram<DemoPSDElement> {
+}
+
+interface DemoPSDElement extends Component {
+}
+
+@GenModel(image="false")
+class ActorBoundary extends DemoPSDElement, Representant {
+	String name
+	refers TR[1..2] Reference1
+}
+
+@GenModel(image="false")
+class TR extends  DemoPSDElement, Representant {
+	String name
+	String result
+	refers ActorBoundary initiator
+	refers ActorBoundary executor
+}
+
+@GenModel(image="false")
+class Elements extends DemoPSDElement, Representant {
+	refers Elements[] ResponseLink
+}
+
+@GenModel(image="false")
+class Start extends Elements {
+}
+
+@GenModel(image="false")
+class Links extends Edge {
+	LinkNames inName
+	LinkNames exName
+}
+
+@GenModel(image="false")
+class ResponceLink extends Links {
+	op boolean acceptsSource(Component source) {
+		return source instanceof TR || source instanceof ActorBoundary
+	}
+	op boolean acceptsEnds(Component source, Component target) {
+		return (source instanceof DemoPSDElement && target instanceof TR);
+	}
+}
+
+@GenModel(image="false")
+class WaitingLink extends Links {
+	op boolean acceptsSource(Component source) {
+		return source instanceof TR || source instanceof ActorBoundary
+	}
+	op boolean acceptsEnds(Component source, Component target) {
+		return (source instanceof DemoPSDElement && target instanceof TR);
+	}
+}
+
+enum LinkNames{
+	none
+	rq
+	qt
+	ac
+	rj
+	pm
+	dc
+	ex
+	st
+	sp
+}

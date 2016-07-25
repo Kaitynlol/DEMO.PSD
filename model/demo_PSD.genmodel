@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.scopio.demo.psd/src" creationCommands="false"
+    creationIcons="false" editDirectory="/org.scopio.demo.psd/src-edit" modelPluginID="org.scopio.demo.psd"
+    runtimeJar="true" modelName="DemoPSD" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="" booleanFlagsField="eFlags" booleanFlagsReservedBits="8" importerID="org.eclipse.emf.ecore.xcore.importer"
+    containmentProxies="true" complianceLevel="8.0" language="en" usedGenPackages="../../org.scopio.diagrams/model/diagrams.xcore#/1/diagrams ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.scopio.entities/model/entities.xcore#/1/entities"
+    importOrganizing="true" decoration="Live">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.xsd.ecore.exporter">
+    <genAnnotations source="selectedPackages">
+      <details key="http://www.eclipse.org/emf/2002/Ecore" value="Ecore.xsd"/>
+    </genAnnotations>
+    <details key="directoryURI" value="."/>
+  </genAnnotations>
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/exporter/org.eclipse.xsd.ecore.exporter.xmi">
+    <genAnnotations source="selectedPackages">
+      <details key="http://www.eclipse.org/emf/2002/Ecore" value="EcoreXMI.xsd"/>
+    </genAnnotations>
+    <details key="directoryURI" value="."/>
+  </genAnnotations>
+  <foreignModel>demo_PSD.xcore</foreignModel>
+  <modelPluginVariables>org.eclipse.xtext.xbase.lib</modelPluginVariables>
+  <modelPluginVariables>org.eclipse.emf.ecore.xcore.lib</modelPluginVariables>
+  <genPackages prefix="DemoPSD" basePackage="org.scopio.demo" disposableProviderFactory="true"
+      ecorePackage="psd.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="psd.ecore#//LinkNames">
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/none"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/rq"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/qt"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/ac"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/rj"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/pm"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/dc"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/ex"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/st"/>
+      <genEnumLiterals ecoreEnumLiteral="psd.ecore#//LinkNames/sp"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="psd.ecore#//DemoPSDDiagram"/>
+    <genClasses image="false" ecoreClass="psd.ecore#//DemoPSDElement"/>
+    <genClasses image="false" ecoreClass="psd.ecore#//ActorBoundary">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute psd.ecore#//ActorBoundary/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference psd.ecore#//ActorBoundary/Reference1"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="psd.ecore#//TR">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute psd.ecore#//TR/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute psd.ecore#//TR/result"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference psd.ecore#//TR/initiator"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference psd.ecore#//TR/executor"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="psd.ecore#//Elements">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference psd.ecore#//Elements/ResponseLink"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="psd.ecore#//Start"/>
+    <genClasses image="false" ecoreClass="psd.ecore#//Links">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute psd.ecore#//Links/inName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute psd.ecore#//Links/exName"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="psd.ecore#//ResponceLink">
+      <genOperations ecoreOperation="psd.ecore#//ResponceLink/acceptsSource">
+        <genParameters ecoreParameter="psd.ecore#//ResponceLink/acceptsSource/source"/>
+      </genOperations>
+      <genOperations ecoreOperation="psd.ecore#//ResponceLink/acceptsEnds">
+        <genParameters ecoreParameter="psd.ecore#//ResponceLink/acceptsEnds/source"/>
+        <genParameters ecoreParameter="psd.ecore#//ResponceLink/acceptsEnds/target"/>
+      </genOperations>
+    </genClasses>
+    <genClasses image="false" ecoreClass="psd.ecore#//WaitingLink">
+      <genOperations ecoreOperation="psd.ecore#//WaitingLink/acceptsSource">
+        <genParameters ecoreParameter="psd.ecore#//WaitingLink/acceptsSource/source"/>
+      </genOperations>
+      <genOperations ecoreOperation="psd.ecore#//WaitingLink/acceptsEnds">
+        <genParameters ecoreParameter="psd.ecore#//WaitingLink/acceptsEnds/source"/>
+        <genParameters ecoreParameter="psd.ecore#//WaitingLink/acceptsEnds/target"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

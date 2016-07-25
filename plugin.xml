@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated demo_PSD -->
+      <package
+            uri="http://www.demo.org/DEMO/2.0"
+            class="org.scopio.demo.psd.DemoPSDPackage"
+            genModel="model/demo_PSD.xcore"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
+      <!-- @generated demo_PSD -->
+      <factory
+            uri="http://www.demo.org/DEMO/2.0"
+            class="org.scopio.demo.psd.provider.DemoPSDItemProviderAdapterFactory"
+            supportedTypes=
+              "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource"/>
+   </extension>
+   <extension
+         point="org.scopio.project.diagrams">
+      <diagram
+            EClass="http://www.demo.org/DEMO/2.0#//DemoPSDDiagram"
+            category="DEMO PSD"
+            name="DEMO PSD Diagram">
+      </diagram>
+   </extension>
+   <extension
+         point="org.scopio.project.diagram_categories">
+      <category
+            name="DEMO PSD">
+      </category>
+   </extension>
+   <extension
+         point="org.scopio.project.diagram_icons">
+      <diagram-category
+            icon="icons/demo16.png"
+            name="DEMO PSD">
+      </diagram-category>
+   </extension>
+   <extension
+         point="org.scopio.decoration.system_contracts">
+      <contracts
+            mapping="decoration/attributes/mapping.xmi"
+            pool="decoration/attributes/contracts.xmi"
+            systemID="attributes">
+         <resource
+               name="attributes"
+               path="decoration/attributes/attributes.xmi">
+         </resource>
+      </contracts>
+   </extension>
+</plugin>
